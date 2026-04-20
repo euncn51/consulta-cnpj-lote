@@ -1,0 +1,280 @@
+# ============================================================================
+# Configurações do NFe Parser v2.0
+# ============================================================================
+# Este arquivo contém todas as configurações do sistema de parsing de NF-e
+# Última atualização: 2026-04-18
+# ============================================================================
+
+# ----------------------------------------------------------------------------
+# LOGGING - Configurações de registro de eventos
+# ----------------------------------------------------------------------------
+logging:
+  # Nível de log: DEBUG, INFO, WARNING, ERROR, CRITICAL
+  level: INFO
+  
+  # Formato das mensagens de log
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  
+  # Formato de data/hora
+  date_format: "%Y-%m-%d %H:%M:%S"
+  
+  # Arquivo de log
+  file: "logs/nfe_parser.log"
+  
+  # Tamanho máximo do arquivo de log (em bytes)
+  # 10485760 = 10MB
+  max_bytes: 10485760
+  
+  # Número de arquivos de backup
+  backup_count: 5
+  
+  # Registrar no console também
+  console: true
+  
+  # Nível de log para console (pode ser diferente do arquivo)
+  console_level: INFO
+
+# ----------------------------------------------------------------------------
+# PARSER - Configurações do processamento de XML
+# ----------------------------------------------------------------------------
+parser:
+  # Encoding padrão dos arquivos XML
+  encoding: "utf-8"
+  
+  # Tamanho do buffer para leitura streaming (em bytes)
+  # 8192 = 8KB (bom equilíbrio entre memória e performance)
+  buffer_size: 8192
+  
+  # Timeout para processamento de um arquivo (em segundos)
+  # 0 = sem timeout
+  timeout: 300
+  
+  # Namespace da NF-e
+  namespace: "http://www.portalfiscal.inf.br/nfe"
+  
+  # Validar estrutura XML antes de processar
+  validate_xml: false
+  
+  # Continuar processamento mesmo com erros em itens individuais
+  continue_on_error: true
+  
+  # Número máximo de erros antes de abortar
+  max_errors: 10
+
+# ----------------------------------------------------------------------------
+# CAMPOS - Configurações de extração de campos
+# ----------------------------------------------------------------------------
+fields:
+  # Extrair todos os 155+ campos disponíveis
+  extract_all: true
+  
+  # Incluir campos vazios/None na exportação
+  include_empty: true
+  
+  # Incluir campos de metadados (data de processamento, etc)
+  include_metadata: false
+  
+  # Prefixo para campos de metadados
+  metadata_prefix: "_meta_"
+  
+  # Converter valores numéricos para float
+  convert_numeric: true
+  
+  # Formato de números decimais (casas decimais)
+  decimal_places: 2
+  
+  # Grupos de campos a extrair (se extract_all = false)
+  # Deixe vazio para extrair todos
+  groups:
+    - identificacao
+    - emitente
+    - destinatario
+    - produto
+    - impostos
+    - totais
+    - transporte
+    - pagamento
+
+# ----------------------------------------------------------------------------
+# EXPORTAÇÃO - Configurações de saída de dados
+# ----------------------------------------------------------------------------
+export:
+  # Formato padrão: excel, csv, json
+  default_format: "excel"
+  
+  # Diretório padrão para salvar arquivos
+  output_dir: "output"
+  
+  # Criar subpastas por data
+  create_date_folders: true
+  
+  # Formato de nome de arquivo
+  # Variáveis: {date}, {time}, {count}
+  filename_pattern: "nfe_export_{date}_{time}"
+  
+  # Sobrescrever arquivos existentes
+  overwrite: false
+  
+  # --- Configurações CSV ---
+  csv:
+    separator: ","
+    encoding: "utf-8-sig"  # UTF-8 com BOM (melhor para Excel)
+    quoting: "minimal"  # minimal, all, nonnumeric, none
+    line_terminator: "\n"
+    decimal: "."
+    
+  # --- Configurações Excel ---
+  excel:
+    engine: "openpyxl"  # openpyxl, xlsxwriter
+    sheet_name: "NF-e"
+    freeze_panes: true  # Congelar primeira linha
+    auto_filter: true   # Adicionar filtro automático
+    column_width: "auto"  # auto, fixed, ou número
+    
+  # --- Configurações JSON ---
+  json:
+    indent: 2
+    ensure_ascii: false  # Permitir caracteres Unicode
+    sort_keys: false
+    orient: "records"  # records, split, index, columns, values
+
+# ----------------------------------------------------------------------------
+# GUI - Configurações da interface gráfica
+# ----------------------------------------------------------------------------
+gui:
+  # --- Janela Principal ---
+  window:
+    width: 1200
+    height: 800
+    title: "NFe Parser v2.0 - Processador de Notas Fiscais Eletrônicas"
+    resizable: true
+    
+  # --- Tema ---
+  theme:
+    name: "default"  # default, dark, light
+    primary_color: "#2196F3"
+    secondary_color: "#FFC107"
+    
+  # --- Diretórios ---
+  directories:
+    default_input: ""  # Vazio = último usado
+    default_output: "output"
+    remember_last: true
+    
+  # --- Processamento ---
+  processing:
+    show_progress: true
+    show_logs: true
+    auto_scroll_logs: true
+    max_log_lines: 1000
+    
+  # --- Exportação ---
+  export_options:
+    show_preview: true
+    confirm_overwrite: true
+    open_after_export: false
+
+# ----------------------------------------------------------------------------
+# PERFORMANCE - Configurações de desempenho
+# ----------------------------------------------------------------------------
+performance:
+  # Usar processamento paralelo para múltiplos arquivos
+  parallel_processing: true
+  
+  # Número de workers (0 = automático baseado em CPU)
+  num_workers: 0
+  
+  # Tamanho do chunk para processamento em lote
+  chunk_size: 100
+  
+  # Cache de resultados
+  enable_cache: false
+  cache_dir: "cache"
+  cache_ttl: 3600  # segundos (1 hora)
+
+# ----------------------------------------------------------------------------
+# VALIDAÇÃO - Configurações de validação de dados
+# ----------------------------------------------------------------------------
+validation:
+  # Validar CNPJ/CPF
+  validate_cnpj_cpf: false
+  
+  # Validar chave de acesso da NF-e
+  validate_access_key: false
+  
+  # Validar valores numéricos (não negativos, etc)
+  validate_numeric: false
+  
+  # Validar datas
+  validate_dates: false
+  
+  # Modo estrito (abortar em caso de validação falhar)
+  strict_mode: false
+
+# ----------------------------------------------------------------------------
+# AVANÇADO - Configurações avançadas
+# ----------------------------------------------------------------------------
+advanced:
+  # Modo debug (mais logs, sem otimizações)
+  debug_mode: false
+  
+  # Salvar XMLs com erro para análise
+  save_error_files: true
+  error_files_dir: "errors"
+  
+  # Gerar relatório de processamento
+  generate_report: true
+  report_format: "txt"  # txt, html, json
+  
+  # Estatísticas de processamento
+  collect_statistics: true
+  
+  # Profiling de performance
+  enable_profiling: false
+
+# ----------------------------------------------------------------------------
+# REFORMA TRIBUTÁRIA - Configurações específicas
+# ----------------------------------------------------------------------------
+reforma_tributaria:
+  # Extrair campos IBS/CBS
+  extract_ibscbs: true
+  
+  # Extrair campos gTribRegular
+  extract_gtribregular: true
+  
+  # Extrair crédito presumido
+  extract_credito_presumido: true
+  
+  # Marcar campos não aplicáveis como "NA"
+  mark_not_applicable: true
+
+# ----------------------------------------------------------------------------
+# COMPATIBILIDADE - Configurações de compatibilidade
+# ----------------------------------------------------------------------------
+compatibility:
+  # Versão mínima do schema NF-e suportada
+  min_nfe_version: "4.00"
+  
+  # Versão máxima do schema NF-e suportada
+  max_nfe_version: "4.00"
+  
+  # Aceitar versões não suportadas (pode causar erros)
+  accept_unsupported_versions: true
+  
+  # Modo de compatibilidade com parser antigo
+  legacy_mode: false
+
+# ============================================================================
+# NOTAS:
+# ============================================================================
+# 1. Todas as configurações têm valores padrão seguros
+# 2. O sistema funciona mesmo sem este arquivo
+# 3. Valores inválidos serão ignorados e substituídos por padrões
+# 4. Comentários iniciados com # são ignorados
+# 5. Use aspas para strings com caracteres especiais
+# 6. Booleanos: true/false (minúsculas)
+# 7. Números: sem aspas
+# 8. Listas: use hífen (-)
+# ============================================================================
+
+# Made with Bob

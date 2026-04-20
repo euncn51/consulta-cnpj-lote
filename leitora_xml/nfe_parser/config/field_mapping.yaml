@@ -1,0 +1,344 @@
+# Mapeamento de Campos XML para DataFrame
+# Define quais campos extrair do XML e como processá-los
+
+# =============================================================================
+# GRUPO 1: EMITENTE
+# =============================================================================
+emitente:
+  emit_CNPJ:
+    xpath: "emit/CNPJ"
+    type: string
+    required: false
+    description: "CNPJ do emitente"
+  
+  emit_CPF:
+    xpath: "emit/CPF"
+    type: string
+    required: false
+    description: "CPF do emitente (pessoa física)"
+  
+  emit_xNome:
+    xpath: "emit/xNome"
+    type: string
+    required: true
+    description: "Razão social do emitente"
+  
+  emit_xFant:
+    xpath: "emit/xFant"
+    type: string
+    required: false
+    description: "Nome fantasia do emitente"
+  
+  emit_IE:
+    xpath: "emit/IE"
+    type: string
+    required: true
+    description: "Inscrição Estadual"
+  
+  emit_CRT:
+    xpath: "emit/CRT"
+    type: string
+    required: true
+    description: "Código de Regime Tributário"
+  
+  # Endereço do Emitente
+  emit_ender_xLgr:
+    xpath: "emit/enderEmit/xLgr"
+    type: string
+    required: false
+    description: "Logradouro"
+  
+  emit_ender_nro:
+    xpath: "emit/enderEmit/nro"
+    type: string
+    required: false
+    description: "Número"
+  
+  emit_ender_xBairro:
+    xpath: "emit/enderEmit/xBairro"
+    type: string
+    required: false
+    description: "Bairro"
+  
+  emit_ender_xMun:
+    xpath: "emit/enderEmit/xMun"
+    type: string
+    required: false
+    description: "Município"
+  
+  emit_ender_UF:
+    xpath: "emit/enderEmit/UF"
+    type: string
+    required: false
+    description: "UF"
+  
+  emit_ender_CEP:
+    xpath: "emit/enderEmit/CEP"
+    type: string
+    required: false
+    description: "CEP"
+
+# =============================================================================
+# GRUPO 2: IDENTIFICAÇÃO DA NF-E
+# =============================================================================
+identificacao:
+  nNF:
+    xpath: "ide/nNF"
+    type: integer
+    required: true
+    description: "Número da NF-e"
+  
+  serie:
+    xpath: "ide/serie"
+    type: string
+    required: true
+    description: "Série da NF-e"
+  
+  dhEmi:
+    xpath: "ide/dhEmi"
+    type: datetime
+    required: true
+    format: "%Y-%m-%dT%H:%M:%S%z"
+    description: "Data e hora de emissão"
+  
+  natOp:
+    xpath: "ide/natOp"
+    type: string
+    required: true
+    description: "Natureza da operação"
+  
+  tpNF:
+    xpath: "ide/tpNF"
+    type: string
+    required: true
+    description: "Tipo de NF-e (0=Entrada, 1=Saída)"
+  
+  CFOP:
+    xpath: "ide/CFOP"
+    type: string
+    required: false
+    description: "CFOP da operação"
+
+# =============================================================================
+# GRUPO 3: DESTINATÁRIO
+# =============================================================================
+destinatario:
+  dest_CNPJ:
+    xpath: "dest/CNPJ"
+    type: string
+    required: false
+    description: "CNPJ do destinatário"
+  
+  dest_CPF:
+    xpath: "dest/CPF"
+    type: string
+    required: false
+    description: "CPF do destinatário"
+  
+  dest_xNome:
+    xpath: "dest/xNome"
+    type: string
+    required: true
+    description: "Nome/Razão social do destinatário"
+  
+  dest_ender_xMun:
+    xpath: "dest/enderDest/xMun"
+    type: string
+    required: false
+    description: "Município do destinatário"
+  
+  dest_ender_UF:
+    xpath: "dest/enderDest/UF"
+    type: string
+    required: false
+    description: "UF do destinatário"
+
+# =============================================================================
+# GRUPO 4: PRODUTO (ITEM)
+# =============================================================================
+produto:
+  nItem:
+    xpath: "@nItem"
+    type: string
+    required: true
+    description: "Número do item"
+  
+  cProd:
+    xpath: "prod/cProd"
+    type: string
+    required: true
+    description: "Código do produto"
+  
+  xProd:
+    xpath: "prod/xProd"
+    type: string
+    required: true
+    description: "Descrição do produto"
+  
+  NCM:
+    xpath: "prod/NCM"
+    type: string
+    required: true
+    description: "Código NCM"
+  
+  CFOP:
+    xpath: "prod/CFOP"
+    type: string
+    required: true
+    description: "CFOP do produto"
+  
+  uCom:
+    xpath: "prod/uCom"
+    type: string
+    required: true
+    description: "Unidade comercial"
+  
+  qCom:
+    xpath: "prod/qCom"
+    type: decimal
+    required: true
+    description: "Quantidade comercial"
+  
+  vUnCom:
+    xpath: "prod/vUnCom"
+    type: decimal
+    required: true
+    description: "Valor unitário comercial"
+  
+  vProd:
+    xpath: "prod/vProd"
+    type: decimal
+    required: true
+    description: "Valor total do produto"
+  
+  vItem:
+    xpath: "vItem"
+    type: decimal
+    required: false
+    description: "Valor do item (com descontos/acréscimos)"
+
+# =============================================================================
+# GRUPO 5: IMPOSTOS - ICMS
+# =============================================================================
+impostos_icms:
+  icms_CST:
+    xpath: "imposto/ICMS/*/CST"
+    type: string
+    required: false
+    description: "Código de Situação Tributária do ICMS"
+  
+  icms_CSOSN:
+    xpath: "imposto/ICMS/*/CSOSN"
+    type: string
+    required: false
+    description: "CSOSN (Simples Nacional)"
+  
+  icms_vBC:
+    xpath: "imposto/ICMS/*/vBC"
+    type: decimal
+    required: false
+    description: "Base de cálculo do ICMS"
+  
+  icms_pICMS:
+    xpath: "imposto/ICMS/*/pICMS"
+    type: decimal
+    required: false
+    description: "Alíquota do ICMS"
+  
+  icms_vICMS:
+    xpath: "imposto/ICMS/*/vICMS"
+    type: decimal
+    required: false
+    description: "Valor do ICMS"
+
+# =============================================================================
+# GRUPO 6: IMPOSTOS - PIS
+# =============================================================================
+impostos_pis:
+  pis_CST:
+    xpath: "imposto/PIS/*/CST"
+    type: string
+    required: false
+    description: "CST do PIS"
+  
+  pis_vBC:
+    xpath: "imposto/PIS/*/vBC"
+    type: decimal
+    required: false
+    description: "Base de cálculo do PIS"
+  
+  pis_pPIS:
+    xpath: "imposto/PIS/*/pPIS"
+    type: decimal
+    required: false
+    description: "Alíquota do PIS"
+  
+  pis_vPIS:
+    xpath: "imposto/PIS/*/vPIS"
+    type: decimal
+    required: false
+    description: "Valor do PIS"
+
+# =============================================================================
+# GRUPO 7: IMPOSTOS - COFINS
+# =============================================================================
+impostos_cofins:
+  cofins_CST:
+    xpath: "imposto/COFINS/*/CST"
+    type: string
+    required: false
+    description: "CST do COFINS"
+  
+  cofins_vBC:
+    xpath: "imposto/COFINS/*/vBC"
+    type: decimal
+    required: false
+    description: "Base de cálculo do COFINS"
+  
+  cofins_pCOFINS:
+    xpath: "imposto/COFINS/*/pCOFINS"
+    type: decimal
+    required: false
+    description: "Alíquota do COFINS"
+  
+  cofins_vCOFINS:
+    xpath: "imposto/COFINS/*/vCOFINS"
+    type: decimal
+    required: false
+    description: "Valor do COFINS"
+
+# =============================================================================
+# GRUPO 8: TOTAIS
+# =============================================================================
+totais:
+  total_vNF:
+    xpath: "total/ICMSTot/vNF"
+    type: decimal
+    required: true
+    description: "Valor total da NF-e"
+  
+  total_vProd:
+    xpath: "total/ICMSTot/vProd"
+    type: decimal
+    required: false
+    description: "Valor total dos produtos"
+  
+  total_vICMS:
+    xpath: "total/ICMSTot/vICMS"
+    type: decimal
+    required: false
+    description: "Valor total do ICMS"
+
+# =============================================================================
+# CAMPOS CUSTOMIZADOS
+# Adicione seus campos personalizados aqui
+# =============================================================================
+custom_fields:
+  # Exemplo de campo customizado:
+  # meu_campo:
+  #   xpath: "caminho/para/campo"
+  #   type: string
+  #   required: false
+  #   description: "Descrição do campo"
+
+# Made with Bob
