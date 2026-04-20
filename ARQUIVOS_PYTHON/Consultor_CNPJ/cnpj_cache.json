@@ -1,0 +1,1567 @@
+{
+  "57158859000140": {
+    "updated": "2025-07-24T12:51:18.000Z",
+    "taxId": "57158859000140",
+    "alias": null,
+    "founded": "1987-02-23",
+    "head": true,
+    "company": {
+      "members": [
+        {
+          "since": "2021-05-19",
+          "person": {
+            "id": "44995d85-2214-4237-a45f-82cc85a57cae",
+            "type": "LEGAL",
+            "name": "DESTRO PARTICIPACOES SOCIETARIAS LTDA",
+            "taxId": "40998183000109"
+          },
+          "role": {
+            "id": 22,
+            "text": "Sócio"
+          },
+          "agent": {
+            "person": {
+              "id": "4d2d2e66-e439-4794-b56c-932e4e1405e9",
+              "type": "NATURAL",
+              "name": "Roberto Carlos Destro",
+              "taxId": "***103658**",
+              "age": "51-60"
+            },
+            "role": {
+              "id": 5,
+              "text": "Administrador"
+            }
+          }
+        },
+        {
+          "since": "1987-02-16",
+          "person": {
+            "id": "4d2d2e66-e439-4794-b56c-932e4e1405e9",
+            "type": "NATURAL",
+            "name": "Roberto Carlos Destro",
+            "taxId": "***103658**",
+            "age": "51-60"
+          },
+          "role": {
+            "id": 49,
+            "text": "Sócio-Administrador"
+          }
+        },
+        {
+          "since": "2018-10-23",
+          "person": {
+            "id": "541c73fc-fa56-4397-9c43-d4b324e3e8dd",
+            "type": "NATURAL",
+            "name": "Priscila Destro",
+            "taxId": "***326838**",
+            "age": "31-40"
+          },
+          "role": {
+            "id": 22,
+            "text": "Sócio"
+          }
+        },
+        {
+          "since": "2018-10-23",
+          "person": {
+            "id": "993c1e55-d645-4bc0-9d8f-a1e54a92dedb",
+            "type": "NATURAL",
+            "name": "Juliana Inacio Destro",
+            "taxId": "***763108**",
+            "age": "21-30"
+          },
+          "role": {
+            "id": 22,
+            "text": "Sócio"
+          }
+        },
+        {
+          "since": "2010-06-23",
+          "person": {
+            "id": "c525ce92-bb0d-4fb1-81a5-593f5c8324da",
+            "type": "NATURAL",
+            "name": "Valdivino Donizete Destro",
+            "taxId": "***982128**",
+            "age": "61-70"
+          },
+          "role": {
+            "id": 49,
+            "text": "Sócio-Administrador"
+          }
+        },
+        {
+          "since": "2018-10-23",
+          "person": {
+            "id": "c89c7d73-af69-4c5f-9fcc-109d156aa0a0",
+            "type": "NATURAL",
+            "name": "Vinicius Henrique Bonani Destro",
+            "taxId": "***028608**",
+            "age": "21-30"
+          },
+          "role": {
+            "id": 22,
+            "text": "Sócio"
+          }
+        },
+        {
+          "since": "2018-10-23",
+          "person": {
+            "id": "c9bd042d-fbe6-4559-9ae5-717e0d4faf11",
+            "type": "NATURAL",
+            "name": "Beatriz Helena Destro",
+            "taxId": "***254948**",
+            "age": "21-30"
+          },
+          "role": {
+            "id": 22,
+            "text": "Sócio"
+          }
+        }
+      ],
+      "id": 57158859,
+      "name": "DESTRO CASA E CONSTRUCAO LTDA",
+      "equity": 190000,
+      "nature": {
+        "id": 2062,
+        "text": "Sociedade Empresária Limitada"
+      },
+      "size": {
+        "id": 5,
+        "acronym": "DEMAIS",
+        "text": "Demais"
+      },
+      "simples": {
+        "optant": false,
+        "since": null
+      },
+      "simei": {
+        "optant": false,
+        "since": null
+      }
+    },
+    "statusDate": "2005-11-03",
+    "status": {
+      "id": 2,
+      "text": "Ativa"
+    },
+    "address": {
+      "municipality": 3507605,
+      "street": "Rua Felipe Siqueira",
+      "number": "195",
+      "district": "Santa Luzia",
+      "city": "Bragança Paulista",
+      "state": "SP",
+      "details": null,
+      "zip": "12919494",
+      "country": {
+        "id": 76,
+        "name": "Brasil"
+      }
+    },
+    "mainActivity": {
+      "id": 4744099,
+      "text": "Comércio varejista de materiais de construção em geral"
+    },
+    "phones": [
+      {
+        "type": "LANDLINE",
+        "area": "11",
+        "number": "40342383"
+      }
+    ],
+    "emails": [],
+    "sideActivities": [
+      {
+        "id": 4679699,
+        "text": "Comércio atacadista de materiais de construção em geral"
+      },
+      {
+        "id": 4930202,
+        "text": "Transporte rodoviário de carga, exceto produtos perigosos e mudanças, intermunicipal, interestadual e internacional"
+      }
+    ],
+    "registrations": [
+      {
+        "number": "225024493113",
+        "state": "SP",
+        "enabled": true,
+        "statusDate": "1974-08-01",
+        "status": {
+          "id": 1,
+          "text": "Sem restrição"
+        },
+        "type": {
+          "id": 1,
+          "text": "IE Normal"
+        }
+      },
+      {
+        "number": "0049615320056",
+        "state": "MG",
+        "enabled": true,
+        "statusDate": "2024-08-06",
+        "status": {
+          "id": 2,
+          "text": "Bloqueado como Destinatário na UF"
+        },
+        "type": {
+          "id": 2,
+          "text": "IE Substituto Tributário"
+        }
+      }
+    ],
+    "suframa": []
+  },
+  "53513230000463": {
+    "updated": "2025-07-13T05:12:15.000Z",
+    "taxId": "53513230000463",
+    "alias": null,
+    "founded": "2000-08-17",
+    "head": false,
+    "company": {
+      "members": [
+        {
+          "since": "1985-04-24",
+          "person": {
+            "id": "3e188914-ab72-4f4d-9ec1-e63bef9438e3",
+            "type": "NATURAL",
+            "name": "Norberto Vargas Coelho",
+            "taxId": "***580358**",
+            "age": "61-70"
+          },
+          "role": {
+            "id": 49,
+            "text": "Sócio-Administrador"
+          }
+        },
+        {
+          "since": "2024-08-21",
+          "person": {
+            "id": "ce2f7ff8-8788-48a3-9872-d859a6cce33b",
+            "type": "NATURAL",
+            "name": "Thiago Jose Pelin Coelho",
+            "taxId": "***104928**",
+            "age": "41-50"
+          },
+          "role": {
+            "id": 5,
+            "text": "Administrador"
+          }
+        }
+      ],
+      "id": 53513230,
+      "name": "PLASTAMP - INDUSTRIA E COMERCIO DE PLASTICOS LTDA",
+      "equity": 52041804,
+      "nature": {
+        "id": 2062,
+        "text": "Sociedade Empresária Limitada"
+      },
+      "size": {
+        "id": 5,
+        "acronym": "DEMAIS",
+        "text": "Demais"
+      },
+      "simples": {
+        "optant": false,
+        "since": null
+      },
+      "simei": {
+        "optant": false,
+        "since": null
+      }
+    },
+    "statusDate": "2005-11-03",
+    "status": {
+      "id": 2,
+      "text": "Ativa"
+    },
+    "address": {
+      "municipality": 2602902,
+      "street": "Estrada Terceiro Acesso da PE 60",
+      "number": "3747",
+      "district": "Zona Industrial Complexo de Suape",
+      "city": "Cabo de Santo Agostinho",
+      "state": "PE",
+      "details": null,
+      "zip": "54590000",
+      "country": {
+        "id": 76,
+        "name": "Brasil"
+      }
+    },
+    "mainActivity": {
+      "id": 2229399,
+      "text": "Fabricação de artefatos de material plástico para outros usos não especificados anteriormente"
+    },
+    "phones": [
+      {
+        "type": "LANDLINE",
+        "area": "11",
+        "number": "49610249"
+      }
+    ],
+    "emails": [
+      {
+        "ownership": "CORPORATE",
+        "address": "estela.portella@plastamp.com.br",
+        "domain": "plastamp.com.br"
+      }
+    ],
+    "sideActivities": [
+      {
+        "id": 2222600,
+        "text": "Fabricação de embalagens de material plástico"
+      },
+      {
+        "id": 2543800,
+        "text": "Fabricação de ferramentas"
+      },
+      {
+        "id": 3314722,
+        "text": "Manutenção e reparação de máquinas e aparelhos para a indústria do plástico"
+      },
+      {
+        "id": 4663000,
+        "text": "Comércio atacadista de Máquinas e equipamentos para uso industrial; partes e peças"
+      }
+    ],
+    "registrations": [
+      {
+        "number": "027511006",
+        "state": "PE",
+        "enabled": true,
+        "statusDate": "2020-03-12",
+        "status": {
+          "id": 1,
+          "text": "Sem restrição"
+        },
+        "type": {
+          "id": 1,
+          "text": "IE Normal"
+        }
+      }
+    ],
+    "suframa": []
+  },
+  "50271778000294": {
+    "updated": "2025-06-14T00:00:00.000Z",
+    "taxId": "50271778000294",
+    "alias": "Meteoric Caldeira",
+    "founded": "2023-05-15",
+    "head": false,
+    "company": {
+      "members": [
+        {
+          "since": "2023-04-11",
+          "person": {
+            "id": "0214a65d-2d7f-4975-aef8-cd22b568f07c",
+            "type": "LEGAL",
+            "name": "METEORIC RESOURCES BRASIL LTDA",
+            "taxId": "49817592000128"
+          },
+          "role": {
+            "id": 22,
+            "text": "Sócio"
+          },
+          "agent": {
+            "person": {
+              "id": "7c8c8277-d9b5-4f9d-ab79-ffdcd748b3bb",
+              "type": "NATURAL",
+              "name": "Marcelo Juliano de Carvalho",
+              "taxId": "***538668**",
+              "age": "51-60"
+            },
+            "role": {
+              "id": 5,
+              "text": "Administrador"
+            }
+          }
+        },
+        {
+          "since": "2024-04-02",
+          "person": {
+            "id": "48a4811a-2a6b-4009-9bae-5a77c254a092",
+            "type": "NATURAL",
+            "name": "Luiz Carlos da Silveira Noronha Junior",
+            "taxId": "***695046**",
+            "age": "41-50"
+          },
+          "role": {
+            "id": 5,
+            "text": "Administrador"
+          }
+        },
+        {
+          "since": "2023-04-11",
+          "person": {
+            "id": "7c8c8277-d9b5-4f9d-ab79-ffdcd748b3bb",
+            "type": "NATURAL",
+            "name": "Marcelo Juliano de Carvalho",
+            "taxId": "***538668**",
+            "age": "51-60"
+          },
+          "role": {
+            "id": 5,
+            "text": "Administrador"
+          }
+        },
+        {
+          "since": "2024-04-02",
+          "person": {
+            "id": "7dbb3e12-153a-4fa2-8dab-1e9eaab6b84a",
+            "type": "NATURAL",
+            "name": "Peter Robert Sheehan",
+            "taxId": "***304646**",
+            "age": "51-60"
+          },
+          "role": {
+            "id": 5,
+            "text": "Administrador"
+          }
+        }
+      ],
+      "id": 50271778,
+      "name": "METEORIC CALDEIRA MINERACAO LTDA.",
+      "equity": 150000,
+      "nature": {
+        "id": 2062,
+        "text": "Sociedade Empresária Limitada"
+      },
+      "size": {
+        "id": 5,
+        "acronym": "DEMAIS",
+        "text": "Demais"
+      },
+      "simples": {
+        "optant": false,
+        "since": null
+      },
+      "simei": {
+        "optant": false,
+        "since": null
+      }
+    },
+    "statusDate": "2023-05-15",
+    "status": {
+      "id": 2,
+      "text": "Ativa"
+    },
+    "address": {
+      "municipality": 3151800,
+      "street": "Avenida Presidente Wenceslau Braz",
+      "number": "5255",
+      "district": "Estancia Pocos de Caldas",
+      "city": "Poços de Caldas",
+      "state": "MG",
+      "details": null,
+      "zip": "37706055",
+      "country": {
+        "id": 76,
+        "name": "Brasil"
+      }
+    },
+    "mainActivity": {
+      "id": 729404,
+      "text": "Extração de minérios de cobre, chumbo, zinco e outros minerais metálicos não-ferrosos não especificados anteriormente"
+    },
+    "phones": [
+      {
+        "type": "MOBILE",
+        "area": "31",
+        "number": "83431720"
+      }
+    ],
+    "emails": [
+      {
+        "ownership": "CORPORATE",
+        "address": "lnoronha@meteoric.com.au",
+        "domain": "meteoric.com.au"
+      }
+    ],
+    "sideActivities": [
+      {
+        "id": 729405,
+        "text": "Beneficiamento de minérios de cobre, chumbo, zinco e outros minerais metálicos não-ferrosos não especificados anteriormente"
+      },
+      {
+        "id": 899199,
+        "text": "Extração de outros minerais não-metálicos não especificados anteriormente"
+      },
+      {
+        "id": 990402,
+        "text": "Atividades de apoio à extração de minerais metálicos não-ferrosos"
+      },
+      {
+        "id": 6463800,
+        "text": "Outras sociedades de participação, exceto holdings"
+      },
+      {
+        "id": 7119702,
+        "text": "Atividades de estudos geológicos"
+      }
+    ],
+    "registrations": [
+      {
+        "number": "0045915180108",
+        "state": "MG",
+        "enabled": true,
+        "statusDate": "2023-05-15",
+        "status": {
+          "id": 1,
+          "text": "Sem restrição"
+        },
+        "type": {
+          "id": 1,
+          "text": "IE Normal"
+        }
+      }
+    ],
+    "suframa": []
+  },
+  "30045008000135": {
+    "updated": "2025-06-14T00:00:00.000Z",
+    "taxId": "30045008000135",
+    "alias": "Stoic Capital",
+    "founded": "2018-03-27",
+    "head": true,
+    "company": {
+      "members": [
+        {
+          "since": "2024-02-28",
+          "person": {
+            "id": "2cad7b3f-d242-4ac1-a120-8335aa18971b",
+            "type": "LEGAL",
+            "name": "SENECA PARTICIPACOES E EMPREENDIMENTOS LTDA",
+            "taxId": "43611411000126"
+          },
+          "role": {
+            "id": 22,
+            "text": "Sócio"
+          },
+          "agent": {
+            "person": {
+              "id": "cda851bf-e5be-4b14-9f31-d17531d55ae3",
+              "type": "NATURAL",
+              "name": "Felipe Manara Whately Paiva",
+              "taxId": "***799921**",
+              "age": "21-30"
+            },
+            "role": {
+              "id": 5,
+              "text": "Administrador"
+            }
+          }
+        },
+        {
+          "since": "2021-08-03",
+          "person": {
+            "id": "4c5539b7-a8d8-446a-95db-0e65f3d9ded4",
+            "type": "NATURAL",
+            "name": "Artur Friedrich Dufrayer Schutte",
+            "taxId": "***641711**",
+            "age": "31-40"
+          },
+          "role": {
+            "id": 22,
+            "text": "Sócio"
+          }
+        },
+        {
+          "since": "2020-08-18",
+          "person": {
+            "id": "be635bbd-6b8d-4b98-8c2d-45636cbb6d95",
+            "type": "NATURAL",
+            "name": "Alan Nogales Domenici Vasconcellos Pinheiro",
+            "taxId": "***105151**",
+            "age": "31-40"
+          },
+          "role": {
+            "id": 22,
+            "text": "Sócio"
+          }
+        },
+        {
+          "since": "2018-03-27",
+          "person": {
+            "id": "cda851bf-e5be-4b14-9f31-d17531d55ae3",
+            "type": "NATURAL",
+            "name": "Felipe Manara Whately Paiva",
+            "taxId": "***799921**",
+            "age": "21-30"
+          },
+          "role": {
+            "id": 5,
+            "text": "Administrador"
+          }
+        }
+      ],
+      "id": 30045008,
+      "name": "STOIC CAPITAL CONSULTORIA E TREINAMENTOS LTDA",
+      "equity": 100000,
+      "nature": {
+        "id": 2062,
+        "text": "Sociedade Empresária Limitada"
+      },
+      "size": {
+        "id": 1,
+        "acronym": "ME",
+        "text": "Microempresa"
+      },
+      "simples": {
+        "optant": false,
+        "since": null
+      },
+      "simei": {
+        "optant": false,
+        "since": null
+      }
+    },
+    "statusDate": "2018-03-27",
+    "status": {
+      "id": 2,
+      "text": "Ativa"
+    },
+    "address": {
+      "municipality": 5300108,
+      "street": "Setor Saus Quadra 04 Bloco a",
+      "number": "SN",
+      "district": "Asa Sul",
+      "city": "Brasília",
+      "state": "DF",
+      "details": "Sala 620 Parte An Edif Victoria Office Tower",
+      "zip": "70070938",
+      "country": {
+        "id": 76,
+        "name": "Brasil"
+      }
+    },
+    "mainActivity": {
+      "id": 7020400,
+      "text": "Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica"
+    },
+    "phones": [
+      {
+        "type": "MOBILE",
+        "area": "61",
+        "number": "98500689"
+      }
+    ],
+    "emails": [
+      {
+        "ownership": "CORPORATE",
+        "address": "financeiro@stoiccapital.com.br",
+        "domain": "stoiccapital.com.br"
+      }
+    ],
+    "sideActivities": [
+      {
+        "id": 8211300,
+        "text": "Serviços combinados de escritório e apoio administrativo"
+      },
+      {
+        "id": 8599604,
+        "text": "Treinamento em desenvolvimento profissional e gerencial"
+      }
+    ],
+    "registrations": [
+      {
+        "number": "0785184000142",
+        "state": "DF",
+        "enabled": true,
+        "statusDate": "2022-04-07",
+        "status": {
+          "id": 1,
+          "text": "Sem restrição"
+        },
+        "type": {
+          "id": 3,
+          "text": "IE Não Contribuinte (Canteiro de Obras, IE Virtual, outros)"
+        }
+      }
+    ],
+    "suframa": []
+  },
+  "ibge": {
+    "SP_Bragança Paulista": "3507605",
+    "PE_Cabo de Santo Agostinho": "2602902",
+    "MG_Poços de Caldas": "3151800",
+    "DF_Brasília": "5300108",
+    "SC_Florianópolis": "4205407",
+    "SP_Mogi Mirim": "3530805",
+    "SP_Diadema": "3513801",
+    "SP_Jaguariúna": "3524709"
+  },
+  "83872762000105": {
+    "updated": "2025-06-30T19:10:33.000Z",
+    "taxId": "83872762000105",
+    "alias": "Hc Combustiveis",
+    "founded": "1972-06-19",
+    "head": true,
+    "company": {
+      "members": [
+        {
+          "since": "2009-08-20",
+          "person": {
+            "id": "919128e4-5a4c-402a-8ad9-b9526a2579e8",
+            "type": "NATURAL",
+            "name": "Hugo Carioni",
+            "taxId": "***316639**",
+            "age": "41-50"
+          },
+          "role": {
+            "id": 49,
+            "text": "Sócio-Administrador"
+          }
+        }
+      ],
+      "id": 83872762,
+      "name": "POSTO AVENIDA LTDA",
+      "equity": 18000,
+      "nature": {
+        "id": 2062,
+        "text": "Sociedade Empresária Limitada"
+      },
+      "size": {
+        "id": 5,
+        "acronym": "DEMAIS",
+        "text": "Demais"
+      },
+      "simples": {
+        "optant": false,
+        "since": null
+      },
+      "simei": {
+        "optant": false,
+        "since": null
+      }
+    },
+    "statusDate": "2005-09-24",
+    "status": {
+      "id": 2,
+      "text": "Ativa"
+    },
+    "address": {
+      "municipality": 4205407,
+      "street": "Rua Delminda Silveira",
+      "number": "485",
+      "district": "Agronomica",
+      "city": "Florianópolis",
+      "state": "SC",
+      "details": null,
+      "zip": "88025500",
+      "country": {
+        "id": 76,
+        "name": "Brasil"
+      }
+    },
+    "mainActivity": {
+      "id": 4731800,
+      "text": "Comércio varejista de combustíveis para veículos automotores"
+    },
+    "phones": [
+      {
+        "type": "MOBILE",
+        "area": "48",
+        "number": "99802277"
+      }
+    ],
+    "emails": [
+      {
+        "ownership": "PERSONAL",
+        "address": "hugocarioni@hotmail.com",
+        "domain": "hotmail.com"
+      }
+    ],
+    "sideActivities": [
+      {
+        "id": 4520005,
+        "text": "Serviços de lavagem, lubrificação e polimento de veículos automotores"
+      },
+      {
+        "id": 4729602,
+        "text": "Comércio varejista de mercadorias em lojas de conveniência"
+      },
+      {
+        "id": 4732600,
+        "text": "Comércio varejista de lubrificantes"
+      },
+      {
+        "id": 4784900,
+        "text": "Comércio varejista de gás liqüefeito de petróleo (GLP)"
+      },
+      {
+        "id": 6810202,
+        "text": "Aluguel de imóveis próprios"
+      }
+    ],
+    "registrations": [
+      {
+        "number": "250130335",
+        "state": "SC",
+        "enabled": true,
+        "statusDate": "1960-11-05",
+        "status": {
+          "id": 1,
+          "text": "Sem restrição"
+        },
+        "type": {
+          "id": 1,
+          "text": "IE Normal"
+        }
+      }
+    ],
+    "suframa": []
+  },
+  "18234459000115": {
+    "updated": "2025-06-14T00:00:00.000Z",
+    "taxId": "18234459000115",
+    "alias": "Medixx",
+    "founded": "2013-06-04",
+    "head": true,
+    "company": {
+      "members": [
+        {
+          "since": "2013-06-04",
+          "person": {
+            "id": "1874a70f-7e44-46c6-ac98-0be026510071",
+            "type": "LEGAL",
+            "name": "BAUMER S A",
+            "taxId": "61374161000130"
+          },
+          "role": {
+            "id": 22,
+            "text": "Sócio"
+          },
+          "agent": {
+            "person": {
+              "id": "b9710e42-525f-4d9f-af13-3e68a6c92c59",
+              "type": "NATURAL",
+              "name": "Ruy Salvari Baumer",
+              "taxId": "***881608**",
+              "age": "61-70"
+            },
+            "role": {
+              "id": 5,
+              "text": "Administrador"
+            }
+          }
+        },
+        {
+          "since": "2013-06-04",
+          "person": {
+            "id": "4aeb6ae2-c01c-4e24-82bc-4a8b3092203a",
+            "type": "LEGAL",
+            "name": "CONDUSTIL PARTICIPACOES S/A",
+            "taxId": "06099371000159"
+          },
+          "role": {
+            "id": 22,
+            "text": "Sócio"
+          },
+          "agent": {
+            "person": {
+              "id": "b9710e42-525f-4d9f-af13-3e68a6c92c59",
+              "type": "NATURAL",
+              "name": "Ruy Salvari Baumer",
+              "taxId": "***881608**",
+              "age": "61-70"
+            },
+            "role": {
+              "id": 5,
+              "text": "Administrador"
+            }
+          }
+        },
+        {
+          "since": "2013-06-04",
+          "person": {
+            "id": "a27687c1-3a97-4185-b110-6098989b53ae",
+            "type": "NATURAL",
+            "name": "Monica Salvari Baumer",
+            "taxId": "***972208**",
+            "age": "61-70"
+          },
+          "role": {
+            "id": 49,
+            "text": "Sócio-Administrador"
+          }
+        },
+        {
+          "since": "2013-06-04",
+          "person": {
+            "id": "b9710e42-525f-4d9f-af13-3e68a6c92c59",
+            "type": "NATURAL",
+            "name": "Ruy Salvari Baumer",
+            "taxId": "***881608**",
+            "age": "61-70"
+          },
+          "role": {
+            "id": 49,
+            "text": "Sócio-Administrador"
+          }
+        }
+      ],
+      "id": 18234459,
+      "name": "MEDIXX COMERCIO E SERVICOS PARA SAUDE LTDA.",
+      "equity": 2404500,
+      "nature": {
+        "id": 2062,
+        "text": "Sociedade Empresária Limitada"
+      },
+      "size": {
+        "id": 5,
+        "acronym": "DEMAIS",
+        "text": "Demais"
+      },
+      "simples": {
+        "optant": false,
+        "since": null
+      },
+      "simei": {
+        "optant": false,
+        "since": null
+      }
+    },
+    "statusDate": "2013-06-04",
+    "status": {
+      "id": 2,
+      "text": "Ativa"
+    },
+    "address": {
+      "municipality": 3530805,
+      "street": "Avenida Prefeito Antonio Tavares Leite",
+      "number": "381",
+      "district": "Parque da Empresa",
+      "city": "Mogi Mirim",
+      "state": "SP",
+      "details": "Galpaoa",
+      "zip": "13803330",
+      "country": {
+        "id": 76,
+        "name": "Brasil"
+      }
+    },
+    "mainActivity": {
+      "id": 3312103,
+      "text": "Manutenção e reparação de aparelhos eletromédicos e eletroterapêuticos e equipamentos de irradiação"
+    },
+    "phones": [
+      {
+        "type": "LANDLINE",
+        "area": "19",
+        "number": "38057671"
+      },
+      {
+        "type": "LANDLINE",
+        "area": "19",
+        "number": "38057555"
+      }
+    ],
+    "emails": [
+      {
+        "ownership": "CORPORATE",
+        "address": "claudio@baumer.com.br",
+        "domain": "baumer.com.br"
+      }
+    ],
+    "sideActivities": [
+      {
+        "id": 3319800,
+        "text": "Manutenção e reparação de equipamentos e produtos não especificados anteriormente"
+      },
+      {
+        "id": 3321000,
+        "text": "Instalação de máquinas e equipamentos industriais"
+      },
+      {
+        "id": 4645101,
+        "text": "Comércio atacadista de instrumentos e materiais para uso médico, cirúrgico, hospitalar e de laboratórios"
+      },
+      {
+        "id": 4664800,
+        "text": "Comércio atacadista de máquinas, aparelhos e equipamentos para uso odonto-médico-hospitalar; partes e peças"
+      },
+      {
+        "id": 4789005,
+        "text": "Comércio varejista de produtos saneantes domissanitários"
+      },
+      {
+        "id": 6203100,
+        "text": "Desenvolvimento e licenciamento de programas de computador não-customizáveis"
+      },
+      {
+        "id": 7739002,
+        "text": "Aluguel de equipamentos científicos, médicos e hospitalares, sem operador"
+      },
+      {
+        "id": 8129000,
+        "text": "Atividades de limpeza não especificadas anteriormente"
+      }
+    ],
+    "registrations": [
+      {
+        "number": "197274960",
+        "state": "PI",
+        "enabled": true,
+        "statusDate": "2025-02-08",
+        "status": {
+          "id": 1,
+          "text": "Sem restrição"
+        },
+        "type": {
+          "id": 2,
+          "text": "IE Substituto Tributário"
+        }
+      },
+      {
+        "number": "030013941",
+        "state": "AM",
+        "enabled": true,
+        "statusDate": "2021-08-15",
+        "status": {
+          "id": 1,
+          "text": "Sem restrição"
+        },
+        "type": {
+          "id": 2,
+          "text": "IE Substituto Tributário"
+        }
+      },
+      {
+        "number": "109763165",
+        "state": "GO",
+        "enabled": true,
+        "statusDate": "2022-10-13",
+        "status": {
+          "id": 1,
+          "text": "Sem restrição"
+        },
+        "type": {
+          "id": 2,
+          "text": "IE Substituto Tributário"
+        }
+      },
+      {
+        "number": "9000057715",
+        "state": "RS",
+        "enabled": true,
+        "statusDate": "2021-09-08",
+        "status": {
+          "id": 2,
+          "text": "Bloqueado como Destinatário na UF"
+        },
+        "type": {
+          "id": 2,
+          "text": "IE Substituto Tributário"
+        }
+      },
+      {
+        "number": "070063788",
+        "state": "CE",
+        "enabled": true,
+        "statusDate": "2024-05-22",
+        "status": {
+          "id": 1,
+          "text": "Sem restrição"
+        },
+        "type": {
+          "id": 2,
+          "text": "IE Substituto Tributário"
+        }
+      },
+      {
+        "number": "0991070737",
+        "state": "PR",
+        "enabled": true,
+        "statusDate": "2022-09-19",
+        "status": {
+          "id": 2,
+          "text": "Bloqueado como Destinatário na UF"
+        },
+        "type": {
+          "id": 2,
+          "text": "IE Substituto Tributário"
+        }
+      },
+      {
+        "number": "0807172600101",
+        "state": "DF",
+        "enabled": true,
+        "statusDate": "2021-07-23",
+        "status": {
+          "id": 1,
+          "text": "Sem restrição"
+        },
+        "type": {
+          "id": 2,
+          "text": "IE Substituto Tributário"
+        }
+      },
+      {
+        "number": "240507061",
+        "state": "AL",
+        "enabled": true,
+        "statusDate": "2023-02-28",
+        "status": {
+          "id": 1,
+          "text": "Sem restrição"
+        },
+        "type": {
+          "id": 2,
+          "text": "IE Substituto Tributário"
+        }
+      },
+      {
+        "number": "456089793115",
+        "state": "SP",
+        "enabled": true,
+        "statusDate": "2013-06-04",
+        "status": {
+          "id": 1,
+          "text": "Sem restrição"
+        },
+        "type": {
+          "id": 1,
+          "text": "IE Normal"
+        }
+      },
+      {
+        "number": "169030989",
+        "state": "PB",
+        "enabled": false,
+        "statusDate": "2021-08-16",
+        "status": {
+          "id": 1,
+          "text": "Sem restrição"
+        },
+        "type": {
+          "id": 2,
+          "text": "IE Substituto Tributário"
+        }
+      },
+      {
+        "number": "0041141890003",
+        "state": "MG",
+        "enabled": false,
+        "statusDate": "2023-01-03",
+        "status": {
+          "id": 2,
+          "text": "Bloqueado como Destinatário na UF"
+        },
+        "type": {
+          "id": 2,
+          "text": "IE Substituto Tributário"
+        }
+      },
+      {
+        "number": "127728511",
+        "state": "MA",
+        "enabled": true,
+        "statusDate": "2023-08-03",
+        "status": {
+          "id": 1,
+          "text": "Sem restrição"
+        },
+        "type": {
+          "id": 2,
+          "text": "IE Substituto Tributário"
+        }
+      },
+      {
+        "number": "157747336",
+        "state": "PA",
+        "enabled": true,
+        "statusDate": "2021-07-08",
+        "status": {
+          "id": 3,
+          "text": "Vedada operação como Destinatário na UF"
+        },
+        "type": {
+          "id": 2,
+          "text": "IE Substituto Tributário"
+        }
+      },
+      {
+        "number": "165081831",
+        "state": "BA",
+        "enabled": true,
+        "statusDate": "2022-05-05",
+        "status": {
+          "id": 1,
+          "text": "Sem restrição"
+        },
+        "type": {
+          "id": 2,
+          "text": "IE Substituto Tributário"
+        }
+      },
+      {
+        "number": "284925934",
+        "state": "MS",
+        "enabled": true,
+        "statusDate": "2023-01-15",
+        "status": {
+          "id": 1,
+          "text": "Sem restrição"
+        },
+        "type": {
+          "id": 2,
+          "text": "IE Substituto Tributário"
+        }
+      },
+      {
+        "number": "11110487",
+        "state": "RJ",
+        "enabled": true,
+        "statusDate": "2018-03-30",
+        "status": {
+          "id": 1,
+          "text": "Sem restrição"
+        },
+        "type": {
+          "id": 2,
+          "text": "IE Substituto Tributário"
+        }
+      }
+    ],
+    "suframa": []
+  },
+  "59160069000125": {
+    "updated": "2025-07-24T19:32:23.000Z",
+    "taxId": "59160069000125",
+    "alias": null,
+    "founded": "1970-03-06",
+    "head": true,
+    "company": {
+      "members": [
+        {
+          "since": "2012-03-28",
+          "person": {
+            "id": "41d7181a-2eb0-4071-aedb-91e84817977b",
+            "type": "NATURAL",
+            "name": "Ivan Siqueira Reszecki",
+            "taxId": "***461668**",
+            "age": "51-60"
+          },
+          "role": {
+            "id": 5,
+            "text": "Administrador"
+          }
+        },
+        {
+          "since": "2016-05-25",
+          "person": {
+            "id": "70b7f90a-e37f-4d08-9d86-80d1d6805931",
+            "type": "LEGAL",
+            "name": "BLACK STONE - EMPREENDIMENTOS E PARTICIPACOES LTDA",
+            "taxId": "24033601000169"
+          },
+          "role": {
+            "id": 22,
+            "text": "Sócio"
+          },
+          "agent": {
+            "person": {
+              "id": "41d7181a-2eb0-4071-aedb-91e84817977b",
+              "type": "NATURAL",
+              "name": "Ivan Siqueira Reszecki",
+              "taxId": "***461668**",
+              "age": "51-60"
+            },
+            "role": {
+              "id": 5,
+              "text": "Administrador"
+            }
+          }
+        },
+        {
+          "since": "2012-03-28",
+          "person": {
+            "id": "83eddf09-3f01-4904-bcf0-ac100ecd5e49",
+            "type": "LEGAL",
+            "name": "GRUPO TORK HOLDING S/A",
+            "taxId": "08260636000184"
+          },
+          "role": {
+            "id": 22,
+            "text": "Sócio"
+          },
+          "agent": {
+            "person": {
+              "id": "41d7181a-2eb0-4071-aedb-91e84817977b",
+              "type": "NATURAL",
+              "name": "Ivan Siqueira Reszecki",
+              "taxId": "***461668**",
+              "age": "51-60"
+            },
+            "role": {
+              "id": 5,
+              "text": "Administrador"
+            }
+          }
+        }
+      ],
+      "id": 59160069,
+      "name": "METALTORK INDUSTRIA E COMERCIO DE AUTO PECAS LTDA",
+      "equity": 88406892,
+      "nature": {
+        "id": 2062,
+        "text": "Sociedade Empresária Limitada"
+      },
+      "size": {
+        "id": 5,
+        "acronym": "DEMAIS",
+        "text": "Demais"
+      },
+      "simples": {
+        "optant": false,
+        "since": null
+      },
+      "simei": {
+        "optant": false,
+        "since": null
+      }
+    },
+    "statusDate": "2005-09-24",
+    "status": {
+      "id": 2,
+      "text": "Ativa"
+    },
+    "address": {
+      "municipality": 3513801,
+      "street": "Rua Brejauva",
+      "number": "400",
+      "district": "Piraporinha",
+      "city": "Diadema",
+      "state": "SP",
+      "details": "Galpaob",
+      "zip": "09950630",
+      "country": {
+        "id": 76,
+        "name": "Brasil"
+      }
+    },
+    "mainActivity": {
+      "id": 2949299,
+      "text": "Fabricação de outras peças e acessórios para veículos automotores não especificadas anteriormente"
+    },
+    "phones": [
+      {
+        "type": "LANDLINE",
+        "area": "11",
+        "number": "40705511"
+      }
+    ],
+    "emails": [
+      {
+        "ownership": "CORPORATE",
+        "address": "fiscal2@metaltork.com.br",
+        "domain": "metaltork.com.br"
+      }
+    ],
+    "sideActivities": [
+      {
+        "id": 2811900,
+        "text": "Fabricação de motores e turbinas, peças e acessórios, exceto para aviões e veículos rodoviários"
+      },
+      {
+        "id": 2869100,
+        "text": "Fabricação de máquinas e equipamentos para uso industrial específico não especificados anteriormente, peças e acessórios"
+      }
+    ],
+    "registrations": [
+      {
+        "number": "286008131113",
+        "state": "SP",
+        "enabled": true,
+        "statusDate": "1970-01-12",
+        "status": {
+          "id": 1,
+          "text": "Sem restrição"
+        },
+        "type": {
+          "id": 2,
+          "text": "IE Substituto Tributário"
+        }
+      }
+    ],
+    "suframa": []
+  },
+  "58998683000106": {
+    "updated": "2025-07-10T23:21:53.000Z",
+    "taxId": "58998683000106",
+    "alias": null,
+    "founded": "1989-05-03",
+    "head": true,
+    "company": {
+      "members": [
+        {
+          "since": "1999-12-27",
+          "person": {
+            "id": "da428eef-15bc-4130-80ef-eeb97295608d",
+            "type": "NATURAL",
+            "name": "Jose Claudio Fabiano",
+            "taxId": "***300908**",
+            "age": "61-70"
+          },
+          "role": {
+            "id": 49,
+            "text": "Sócio-Administrador"
+          }
+        },
+        {
+          "since": "1999-12-27",
+          "person": {
+            "id": "e1def70f-4b54-41fa-8ca6-08c8f2017134",
+            "type": "NATURAL",
+            "name": "Eloi Ribeiro",
+            "taxId": "***919478**",
+            "age": "51-60"
+          },
+          "role": {
+            "id": 22,
+            "text": "Sócio"
+          }
+        }
+      ],
+      "id": 58998683,
+      "name": "ENGEFAZ ENGENHARIA LTDA",
+      "equity": 1000000,
+      "nature": {
+        "id": 2062,
+        "text": "Sociedade Empresária Limitada"
+      },
+      "size": {
+        "id": 5,
+        "acronym": "DEMAIS",
+        "text": "Demais"
+      },
+      "simples": {
+        "optant": false,
+        "since": null
+      },
+      "simei": {
+        "optant": false,
+        "since": null
+      }
+    },
+    "statusDate": "2005-11-03",
+    "status": {
+      "id": 2,
+      "text": "Ativa"
+    },
+    "address": {
+      "municipality": 3524709,
+      "street": "Rodovia Campinas - Mogi Mirim Km 133,10",
+      "number": "S/N",
+      "district": "Jardim Roseira",
+      "city": "Jaguariúna",
+      "state": "SP",
+      "details": "Sala Egf",
+      "zip": "13917470",
+      "country": {
+        "id": 76,
+        "name": "Brasil"
+      }
+    },
+    "mainActivity": {
+      "id": 7120100,
+      "text": "Testes e análises técnicas"
+    },
+    "phones": [
+      {
+        "type": "LANDLINE",
+        "area": "19",
+        "number": "38723000"
+      }
+    ],
+    "emails": [
+      {
+        "ownership": "CORPORATE",
+        "address": "engefaz@engefaz.com",
+        "domain": "engefaz.com"
+      }
+    ],
+    "sideActivities": [
+      {
+        "id": 2622100,
+        "text": "Fabricação de periféricos para equipamentos de informática"
+      },
+      {
+        "id": 2651500,
+        "text": "Fabricação de aparelhos e equipamentos de medida, teste e controle"
+      },
+      {
+        "id": 3314710,
+        "text": "Manutenção e reparação de máquinas e equipamentos para uso geral não especificados anteriormente"
+      },
+      {
+        "id": 3314799,
+        "text": "Manutenção e reparação de outras máquinas e equipamentos para usos industriais não especificados anteriormente"
+      },
+      {
+        "id": 3329599,
+        "text": "Instalação de outros equipamentos não especificados anteriormente"
+      },
+      {
+        "id": 4663000,
+        "text": "Comércio atacadista de Máquinas e equipamentos para uso industrial; partes e peças"
+      },
+      {
+        "id": 6202300,
+        "text": "Desenvolvimento e licenciamento de programas de computador customizáveis"
+      },
+      {
+        "id": 6204000,
+        "text": "Consultoria em tecnologia da informação"
+      },
+      {
+        "id": 7112000,
+        "text": "Serviços de engenharia"
+      },
+      {
+        "id": 7739099,
+        "text": "Aluguel de outras máquinas e equipamentos comerciais e industriais não especificados anteriormente, sem operador"
+      },
+      {
+        "id": 8211300,
+        "text": "Serviços combinados de escritório e apoio administrativo"
+      },
+      {
+        "id": 8599604,
+        "text": "Treinamento em desenvolvimento profissional e gerencial"
+      }
+    ],
+    "registrations": [
+      {
+        "number": "276090280110",
+        "state": "SP",
+        "enabled": false,
+        "statusDate": "2005-04-18",
+        "status": {
+          "id": 1,
+          "text": "Sem restrição"
+        },
+        "type": {
+          "id": 1,
+          "text": "IE Normal"
+        }
+      },
+      {
+        "number": "395138815112",
+        "state": "SP",
+        "enabled": true,
+        "statusDate": "2005-04-18",
+        "status": {
+          "id": 1,
+          "text": "Sem restrição"
+        },
+        "type": {
+          "id": 1,
+          "text": "IE Normal"
+        }
+      }
+    ],
+    "suframa": []
+  }
+}

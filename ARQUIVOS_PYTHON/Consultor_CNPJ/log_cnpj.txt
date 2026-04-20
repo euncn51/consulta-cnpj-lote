@@ -1,0 +1,14 @@
+10:02:40 - ℹ️ Consultando CNPJ: 57158859000140
+10:02:42 - ✅ Consulta realizada com sucesso!
+10:03:14 - ℹ️ Iniciando processamento de consulta_cnpj.xlsx
+10:03:18 - ✅ Processamento concluído! Salvo em C:/Users/08748D631/Documents/resultados_cnpj.xlsx
+10:40:46 - ℹ️ Consultando CNPJ: 01121175000110
+10:40:47 - ✅ Consulta realizada com sucesso!
+11:02:00 - ℹ️ Iniciando processamento de consulta_cnpj.csv
+11:02:01 - ❌ Erro: Coluna 'CNPJ' não encontrada
+11:02:19 - ℹ️ Iniciando processamento de consulta_cnpj.xlsx
+11:02:20 - ✅ Processamento concluído! Salvo em C:/Users/08748D631/Documents/resultados_cnpj.xlsx
+17:26:12 - ℹ️ Iniciando processamento de consulta_cnpj.xlsx
+17:26:17 - ❌ Erro: Erro crítico: [Errno 13] Permission denied: 'C:/Users/08748D631/Documents/resultados_cnpj.xlsx'
+17:26:29 - ℹ️ Iniciando processamento de consulta_cnpj.xlsx
+17:26:29 - ✅ Processamento concluído! Salvo em C:/Users/08748D631/Documents/resultados_cnpj.xlsx

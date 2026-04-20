@@ -1,0 +1,6 @@
+11:11:29 - ℹ️ Consultando CNPJ: 57158859000140
+11:11:30 - ✅ Consulta realizada com sucesso!
+11:11:51 - ℹ️ Iniciando processamento de consulta_cnpj.xlsx
+11:11:53 - ✅ Processamento concluído! Salvo em C:/Users/08748D631/Documents/resultados_cnpj.xlsx
+17:39:50 - ℹ️ Iniciando processamento de consulta_cnpj.xlsx
+17:39:53 - ✅ Processamento concluído! Salvo em C:/Users/08748D631/Desktop/resultados_cnpj.xlsx
