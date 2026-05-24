@@ -1,0 +1,18 @@
+21:08:04 - ℹ️ Consultando CNPJ: 40181203000308
+21:08:05 - ✅ Consulta realizada com sucesso: 40181203000308
+21:08:52 - ℹ️ Consultando CNPJ: 40181203000308
+21:08:52 - ✅ Consulta realizada com sucesso: 40181203000308
+21:10:49 - ✅ Processamento em lote concluído: 993 CNPJs
+21:19:04 - ✅ Cache limpo com sucesso
+21:22:11 - ℹ️ Consultando CNPJ: 40181203000308
+21:22:12 - ✅ Consulta realizada com sucesso: 40181203000308
+21:22:24 - ✅ Exportação individual para Excel: 40181203000308
+21:23:20 - ✅ Processamento em lote concluído: 993 CNPJs
+21:23:21 - ⚠️ Arquivo temporário temp_input_20260522_212317.xlsx será removido posteriormente
+21:36:09 - ✅ Cache limpo com sucesso
+21:36:42 - ℹ️ Consultando CNPJ: 07411909000181
+21:36:43 - ✅ Consulta realizada com sucesso: 07411909000181
+21:36:56 - ✅ Exportação individual para Excel: 07411909000181
+21:38:47 - ✅ Processamento em lote concluído: 993 CNPJs
+21:38:47 - ⚠️ Arquivo temporário temp_input_20260522_213731.xlsx será removido posteriormente
+21:41:17 - ✅ Cache limpo com sucesso
