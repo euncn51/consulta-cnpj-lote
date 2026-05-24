@@ -1,0 +1,46 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# VS Code
+.vscode/
+
+# Distribution / build
+build/
+dist/
+dist/*
+output_installer/
+Installer/
+*.exe
+*.pkg
+*.zip
+
+# PyInstaller
+*.spec
+
+# Packaging
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Logs and databases
+*.log
+*.sqlite3
+*.db
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Misc
+*.pyc
+*.pkl
+localpycs/
+codigos.zip
