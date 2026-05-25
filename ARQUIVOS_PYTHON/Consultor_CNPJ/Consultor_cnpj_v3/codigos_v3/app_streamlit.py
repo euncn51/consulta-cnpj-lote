@@ -30,46 +30,101 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# CSS customizado para melhorar a aparência
-st.markdown("""
-<style>
-    .main-header {
-        font-size: 2.5rem;
-        font-weight: bold;
-        color: #4F81BD;
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-    .success-box {
-        padding: 1rem;
-        border-radius: 0.5rem;
-        background-color: #d4edda;
-        border: 1px solid #c3e6cb;
-        color: #155724;
-    }
-    .error-box {
-        padding: 1rem;
-        border-radius: 0.5rem;
-        background-color: #f8d7da;
-        border: 1px solid #f5c6cb;
-        color: #721c24;
-    }
-    .info-box {
-        padding: 1rem;
-        border-radius: 0.5rem;
-        background-color: #d1ecf1;
-        border: 1px solid #bee5eb;
-        color: #0c5460;
-    }
-    .stTabs [data-baseweb="tab-list"] {
-        gap: 2rem;
-    }
-    .stTabs [data-baseweb="tab"] {
-        height: 3rem;
-        padding: 0 2rem;
-    }
-</style>
-""", unsafe_allow_html=True)
+def apply_custom_css(dark_mode=False):
+    """Aplica CSS customizado baseado no tema"""
+    if dark_mode:
+        # CSS para Dark Mode
+        st.markdown("""
+        <style>
+            .main-header {
+                font-size: 2.5rem;
+                font-weight: bold;
+                color: #64B5F6;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+            .success-box {
+                padding: 1rem;
+                border-radius: 0.5rem;
+                background-color: #1B5E20;
+                border: 1px solid #2E7D32;
+                color: #A5D6A7;
+            }
+            .error-box {
+                padding: 1rem;
+                border-radius: 0.5rem;
+                background-color: #B71C1C;
+                border: 1px solid #C62828;
+                color: #EF9A9A;
+            }
+            .info-box {
+                padding: 1rem;
+                border-radius: 0.5rem;
+                background-color: #01579B;
+                border: 1px solid #0277BD;
+                color: #81D4FA;
+            }
+            .stTabs [data-baseweb="tab-list"] {
+                gap: 2rem;
+            }
+            .stTabs [data-baseweb="tab"] {
+                height: 3rem;
+                padding: 0 2rem;
+            }
+            /* Melhorias para dark mode */
+            [data-testid="stSidebar"] {
+                background-color: #1E1E1E;
+            }
+            .stTextInput > div > div > input {
+                background-color: #2D2D2D;
+                color: #FFFFFF;
+            }
+            .stDataFrame {
+                background-color: #2D2D2D;
+            }
+        </style>
+        """, unsafe_allow_html=True)
+    else:
+        # CSS para Light Mode
+        st.markdown("""
+        <style>
+            .main-header {
+                font-size: 2.5rem;
+                font-weight: bold;
+                color: #4F81BD;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+            .success-box {
+                padding: 1rem;
+                border-radius: 0.5rem;
+                background-color: #d4edda;
+                border: 1px solid #c3e6cb;
+                color: #155724;
+            }
+            .error-box {
+                padding: 1rem;
+                border-radius: 0.5rem;
+                background-color: #f8d7da;
+                border: 1px solid #f5c6cb;
+                color: #721c24;
+            }
+            .info-box {
+                padding: 1rem;
+                border-radius: 0.5rem;
+                background-color: #d1ecf1;
+                border: 1px solid #bee5eb;
+                color: #0c5460;
+            }
+            .stTabs [data-baseweb="tab-list"] {
+                gap: 2rem;
+            }
+            .stTabs [data-baseweb="tab"] {
+                height: 3rem;
+                padding: 0 2rem;
+            }
+        </style>
+        """, unsafe_allow_html=True)
 
 # Inicialização do session state
 def init_session_state():
@@ -88,6 +143,9 @@ def init_session_state():
     
     if 'batch_results' not in st.session_state:
         st.session_state.batch_results = None
+    
+    if 'dark_mode' not in st.session_state:
+        st.session_state.dark_mode = False
 
 def add_log(message: str, level: str = "info"):
     """Adiciona uma mensagem ao log"""
@@ -115,6 +173,22 @@ def display_logs():
 def sidebar_settings():
     """Cria a barra lateral com configurações"""
     st.sidebar.title("⚙️ Configurações")
+    
+    # Toggle Dark Mode
+    st.sidebar.subheader("🎨 Aparência")
+    
+    dark_mode = st.sidebar.toggle(
+        "🌙 Modo Escuro" if not st.session_state.dark_mode else "☀️ Modo Claro",
+        value=st.session_state.dark_mode,
+        help="Alternar entre modo claro e escuro"
+    )
+    
+    if dark_mode != st.session_state.dark_mode:
+        st.session_state.dark_mode = dark_mode
+        add_log(f"Tema alterado para: {'Escuro' if dark_mode else 'Claro'}", "info")
+        st.rerun()
+    
+    st.sidebar.divider()
     
     # Configurações de API
     st.sidebar.subheader("Limites de API")
@@ -529,6 +603,11 @@ def tab_help():
         st.markdown("""
         ### Configurações Disponíveis
         
+        **Aparência:**
+        - **🌙 Modo Escuro / ☀️ Modo Claro:** Alterne entre temas claro e escuro
+        - O tema é salvo automaticamente durante a sessão
+        - Melhora o conforto visual em ambientes com pouca luz
+        
         **Limites de API:**
         - **Requisições por minuto:** Número máximo de consultas por minuto (padrão: 3)
         - **Tempo de espera:** Tempo de pausa ao atingir o limite (padrão: 65 segundos)
@@ -603,6 +682,9 @@ def main():
     """Função principal da aplicação"""
     # Inicializar session state
     init_session_state()
+    
+    # Aplicar CSS customizado baseado no tema
+    apply_custom_css(st.session_state.dark_mode)
     
     # Título principal
     st.markdown('<h1 class="main-header">🏢 Consultor de CNPJ</h1>', unsafe_allow_html=True)

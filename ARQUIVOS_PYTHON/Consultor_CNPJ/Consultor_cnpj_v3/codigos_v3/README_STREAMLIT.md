@@ -30,7 +30,7 @@ Aplicação moderna para consulta de CNPJs brasileiros usando Streamlit, com int
 - ✅ Funciona em qualquer navegador (desktop e mobile)
 - ✅ Drag-and-drop para upload de arquivos
 - ✅ Tabelas interativas para visualização de dados
-- ✅ Temas claro/escuro nativos
+- ✅ Temas claro/escuro nativos do Streamlit
 - ✅ Sem necessidade de instalação de executável
 - ✅ Fácil deployment na nuvem
 - ✅ ~60% menos código que a versão Tkinter
