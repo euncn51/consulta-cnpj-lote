@@ -1,286 +1,307 @@
-# NFe Parser - Sistema de Análise de Notas Fiscais Eletrônicas
+# 🏢 Consultor de CNPJ - Versão Streamlit
 
-Sistema completo para parsing e análise de arquivos XML de NF-e (Nota Fiscal Eletrônica) com suporte à Reforma Tributária.
+Aplicação moderna para consulta de CNPJs brasileiros usando Streamlit, com interface responsiva e recursos avançados.
 
-## 🚀 Funcionalidades Implementadas
+## 📋 Índice
 
-### ✅ Sistema de Logging Estruturado
-- Múltiplos níveis de log (DEBUG, INFO, WARNING, ERROR, CRITICAL)
-- Rotação automática de arquivos (10MB, 5 backups)
-- Formatação colorida no console
-- Logs detalhados salvos em arquivo
-- Thread-safe e modular
+- [Características](#características)
+- [Requisitos](#requisitos)
+- [Instalação](#instalação)
+- [Como Usar](#como-usar)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Deployment](#deployment)
+- [Diferenças da Versão Tkinter](#diferenças-da-versão-tkinter)
+- [Troubleshooting](#troubleshooting)
 
-### ✅ Processamento Streaming
-- Parsing incremental usando `xml.etree.ElementTree.iterparse()`
-- Baixo uso de memória (ideal para arquivos grandes)
-- Suporta arquivos XML de qualquer tamanho
-- Callbacks de progresso em tempo real
-- Liberação automática de memória após processar cada elemento
+## ✨ Características
 
-### ✅ Arquitetura Modular
-- Separação clara de responsabilidades
-- Fácil manutenção e extensão
-- Imports organizados
-- Documentação completa em código
+### Funcionalidades Principais
+
+- **🔍 Consulta Individual**: Consulte CNPJs individualmente com resultados detalhados
+- **📊 Processamento em Lote**: Processe múltiplos CNPJs de arquivos Excel ou CSV
+- **⚙️ Configurações Personalizáveis**: Ajuste limites de API, proxy e outras configurações
+- **📋 Sistema de Logs**: Acompanhe todas as operações em tempo real
+- **💾 Cache Inteligente**: Resultados salvos para consultas futuras
+- **📥 Exportação**: Baixe resultados em formato Excel
+
+### Melhorias da Versão Streamlit
+
+- ✅ Interface moderna e responsiva
+- ✅ Funciona em qualquer navegador (desktop e mobile)
+- ✅ Drag-and-drop para upload de arquivos
+- ✅ Tabelas interativas para visualização de dados
+- ✅ Temas claro/escuro nativos do Streamlit
+- ✅ Sem necessidade de instalação de executável
+- ✅ Fácil deployment na nuvem
+- ✅ ~60% menos código que a versão Tkinter
+
+## 📦 Requisitos
+
+### Sistema
+
+- Python 3.8 ou superior
+- Conexão com internet
+- Navegador web moderno
+
+### Dependências
+
+```
+streamlit==1.31.0
+openpyxl==3.1.2
+requests==2.32.4
+pandas==2.2.0
+```
+
+## 🚀 Instalação
+
+### 1. Clone ou baixe o projeto
+
+```bash
+cd Consultor_cnpj_v3/codigos_v3
+```
+
+### 2. Crie um ambiente virtual (recomendado)
+
+**Windows:**
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+**Linux/Mac:**
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3. Instale as dependências
+
+```bash
+pip install -r requirements_streamlit.txt
+```
+
+## 💻 Como Usar
+
+### Executar Localmente
+
+```bash
+streamlit run app_streamlit.py
+```
+
+A aplicação abrirá automaticamente no navegador em `http://localhost:8501`
+
+### Consulta Individual
+
+1. Acesse a aba **"🔍 Consulta Individual"**
+2. Digite o CNPJ (com ou sem formatação)
+3. Clique em **"🔎 Consultar"**
+4. Visualize os resultados completos
+5. Veja as inscrições estaduais em tabela interativa
+
+### Processamento em Lote
+
+1. Acesse a aba **"📊 Processamento em Lote"**
+2. Faça upload do arquivo Excel ou CSV
+3. Informe o nome da coluna com CNPJs (padrão: "CNPJ")
+4. Defina o nome do arquivo de saída
+5. Clique em **"🚀 Processar Arquivo"**
+6. Acompanhe o progresso em tempo real
+7. Baixe os resultados usando o botão de download
+
+### Configurações
+
+Use a **barra lateral** para:
+
+- Ajustar limites de requisições por minuto
+- Configurar tempo de espera
+- Definir proxy (se necessário)
+- Limpar cache
+- Limpar logs
 
 ## 📁 Estrutura do Projeto
 
 ```
-nfe_parser/
-├── src/
-│   ├── core/
-│   │   ├── __init__.py
-│   │   └── streaming_parser.py    # Parser com streaming
-│   ├── utils/
-│   │   ├── __init__.py
-│   │   └── logger.py               # Sistema de logging
-│   └── __init__.py
-├── logs/                            # Logs gerados automaticamente
-├── docs/
-│   ├── analise_nfe_parser.md       # Análise completa do código
-│   └── plano_melhorias_nfe_parser.md  # Plano de melhorias
-├── leito_nfe_xml_v7.py             # Parser original
-├── test_streaming_logger_simple.py # Script de teste
-└── README.md
+codigos_v3/
+├── app_streamlit.py           # Aplicação principal Streamlit
+├── api_client.py              # Cliente da API CNPJ.WS
+├── constants.py               # Constantes e configurações
+├── requirements_streamlit.txt # Dependências Python
+├── README_STREAMLIT.md        # Esta documentação
+├── .streamlit/
+│   └── config.toml           # Configurações do Streamlit
+└── cnpj_cache.json           # Cache de consultas (gerado automaticamente)
 ```
 
-## 🔧 Instalação
+## 🌐 Deployment
 
-### Requisitos
-- Python 3.8+
-- Dependências básicas (incluídas no Python):
-  - xml.etree.ElementTree
-  - logging
-  - pathlib
+### Streamlit Cloud (Gratuito)
 
-### Instalação de Dependências Adicionais (para versão completa)
-```bash
-pip install pandas numpy openpyxl pyyaml
+1. **Crie uma conta** em [streamlit.io](https://streamlit.io)
+
+2. **Faça upload do projeto** para GitHub
+
+3. **Configure o deployment:**
+   - Conecte seu repositório GitHub
+   - Selecione o branch
+   - Defina o caminho: `Consultor_cnpj_v3/codigos_v3/app_streamlit.py`
+   - Arquivo de requirements: `requirements_streamlit.txt`
+
+4. **Deploy!** A aplicação estará disponível em uma URL pública
+
+### Docker (Opcional)
+
+Crie um `Dockerfile`:
+
+```dockerfile
+FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY requirements_streamlit.txt .
+RUN pip install --no-cache-dir -r requirements_streamlit.txt
+
+COPY . .
+
+EXPOSE 8501
+
+CMD ["streamlit", "run", "app_streamlit.py", "--server.port=8501", "--server.address=0.0.0.0"]
 ```
 
-## 📖 Uso Básico
-
-### 1. Sistema de Logging
-
-```python
-from src.utils.logger import setup_logger, get_logger
-
-# Configurar logging
-setup_logger(
-    log_dir='logs',
-    log_level='INFO',
-    console_level='INFO',
-    file_level='DEBUG'
-)
-
-# Obter logger para seu módulo
-logger = get_logger('meu_modulo')
-
-# Usar logger
-logger.info("Processando arquivo XML")
-logger.warning("Atenção: campo opcional não encontrado")
-logger.error("Erro ao processar", exc_info=True)
-```
-
-### 2. Parser com Streaming
-
-```python
-from src.core.streaming_parser import StreamingNFeParser
-from src.utils.logger import setup_logger
-
-# Configurar logging
-setup_logger()
-
-# Criar parser
-parser = StreamingNFeParser()
-
-# Callback de progresso (opcional)
-def on_progress(current, total):
-    percent = (current / total) * 100
-    print(f"Progresso: {current}/{total} ({percent:.1f}%)")
-
-# Processar arquivo XML
-data = parser.parse_xml_stream(
-    'caminho/para/nota.xml',
-    progress_callback=on_progress
-)
-
-# Processar múltiplos arquivos
-file_paths = ['nota1.xml', 'nota2.xml', 'nota3.xml']
-all_data = parser.parse_multiple_files(file_paths)
-
-# Converter para DataFrame (requer pandas)
-import pandas as pd
-df = pd.DataFrame(all_data)
-```
-
-### 3. Executar Testes
+Build e execute:
 
 ```bash
-# Teste completo do sistema
-python test_streaming_logger_simple.py
+docker build -t consultor-cnpj .
+docker run -p 8501:8501 consultor-cnpj
 ```
 
-## 📊 Dados Extraídos
+### Servidor Local (Produção)
 
-O parser extrai os seguintes grupos de dados da NF-e:
+Para executar em servidor:
 
-### Cabeçalho (Header)
-- **Emitente**: CNPJ, Nome, IE, Endereço
-- **Identificação**: Número, Série, Data de Emissão, Natureza da Operação
-- **Destinatário**: CNPJ/CPF, Nome
-- **Totais**: Valor total da NF-e
-
-### Itens (Detalhes)
-- **Produto**: Código, Descrição, NCM, CFOP, Quantidade, Valor
-- **Impostos**:
-  - ICMS (CST, Base de Cálculo, Alíquota, Valor)
-  - PIS (CST, Base de Cálculo, Alíquota, Valor)
-  - COFINS (CST, Base de Cálculo, Alíquota, Valor)
-  - IBS/CBS (Reforma Tributária)
-
-## 🎯 Exemplos de Uso
-
-### Exemplo 1: Processar um único arquivo
-
-```python
-from src.core.streaming_parser import StreamingNFeParser
-from src.utils.logger import setup_logger, get_logger
-
-# Setup
-setup_logger(log_level='INFO')
-logger = get_logger('exemplo1')
-parser = StreamingNFeParser()
-
-# Processar
-logger.info("Iniciando processamento...")
-data = parser.parse_xml_stream('nota_fiscal.xml')
-logger.info(f"Extraídos {len(data)} itens")
-
-# Exibir primeiro item
-if data:
-    print("\nPrimeiro item:")
-    for key, value in data[0].items():
-        print(f"  {key}: {value}")
+```bash
+streamlit run app_streamlit.py --server.port 8501 --server.address 0.0.0.0
 ```
 
-### Exemplo 2: Processar pasta com múltiplos XMLs
+Com PM2 (para manter rodando):
 
-```python
-from src.core.streaming_parser import StreamingNFeParser
-from src.utils.logger import setup_logger, get_logger
-import glob
-import pandas as pd
-
-# Setup
-setup_logger()
-logger = get_logger('exemplo2')
-parser = StreamingNFeParser()
-
-# Buscar arquivos
-xml_files = glob.glob('pasta_xmls/*.xml')
-logger.info(f"Encontrados {len(xml_files)} arquivos XML")
-
-# Processar com callback
-def on_file_progress(current, total, filename):
-    logger.info(f"Processando {current}/{total}: {filename}")
-
-all_data = parser.parse_multiple_files(xml_files, on_file_progress)
-
-# Converter para DataFrame e salvar
-df = pd.DataFrame(all_data)
-df.to_excel('resultado.xlsx', index=False)
-logger.info(f"Resultado salvo: {len(df)} registros")
+```bash
+pm2 start "streamlit run app_streamlit.py" --name consultor-cnpj
 ```
 
-### Exemplo 3: Monitorar uso de memória
+## 🔄 Diferenças da Versão Tkinter
 
-```python
-from src.core.streaming_parser import StreamingNFeParser
-from src.utils.logger import setup_logger, get_logger
-import psutil
-import os
+| Aspecto | Tkinter | Streamlit |
+|---------|---------|-----------|
+| **Interface** | Desktop nativa | Web responsiva |
+| **Instalação** | Executável Windows | Navegador web |
+| **Código** | ~550 linhas | ~670 linhas (mais funcionalidades) |
+| **Threading** | Manual com Queue | Nativo do Streamlit |
+| **Tabelas** | Text widget | DataFrame interativo |
+| **Progresso** | ttk.Progressbar | st.progress() |
+| **Logs** | Text widget | Expander colapsável |
+| **Deployment** | Instalador .exe | Cloud/Docker/Local |
+| **Mobile** | Não suportado | Totalmente responsivo |
+| **Temas** | Fixo | Claro/Escuro automático |
 
-setup_logger()
-logger = get_logger('exemplo3')
-parser = StreamingNFeParser()
+## 🛠️ Troubleshooting
 
-# Memória inicial
-process = psutil.Process(os.getpid())
-mem_before = process.memory_info().rss / 1024 / 1024  # MB
+### Erro: "ModuleNotFoundError: No module named 'streamlit'"
 
-logger.info(f"Memória inicial: {mem_before:.2f} MB")
-
-# Processar arquivo grande
-data = parser.parse_xml_stream('arquivo_grande.xml')
-
-# Memória final
-mem_after = process.memory_info().rss / 1024 / 1024  # MB
-logger.info(f"Memória final: {mem_after:.2f} MB")
-logger.info(f"Diferença: {mem_after - mem_before:.2f} MB")
+**Solução:** Instale as dependências
+```bash
+pip install -r requirements_streamlit.txt
 ```
+
+### Erro: "Address already in use"
+
+**Solução:** Porta 8501 já está em uso. Use outra porta:
+```bash
+streamlit run app_streamlit.py --server.port 8502
+```
+
+### Erro de Rate Limit da API
+
+**Solução:** 
+1. Acesse as Configurações na barra lateral
+2. Aumente o "Tempo de espera" para 90 segundos
+3. Reduza "Requisições por minuto" para 2
+4. Salve as configurações
+
+### Arquivo não processa
+
+**Solução:**
+1. Verifique se o arquivo é Excel (.xlsx, .xls) ou CSV
+2. Confirme que existe uma coluna com CNPJs
+3. Verifique o nome exato da coluna (case-sensitive)
+4. Certifique-se que os CNPJs estão no formato correto
+
+### Proxy não funciona
+
+**Solução:**
+1. Verifique o formato: `http://proxy:porta` ou `https://proxy:porta`
+2. Teste com e sem autenticação
+3. Confirme que o proxy está acessível
+4. Salve as configurações após preencher
+
+## 📊 Formato dos Arquivos
+
+### Arquivo de Entrada (Excel/CSV)
+
+```
+| CNPJ           | Outras Colunas |
+|----------------|----------------|
+| 00000000000191 | ...            |
+| 12.345.678/0001-90 | ...        |
+```
+
+### Arquivo de Saída (Excel)
+
+**Aba "CNPJs":**
+- CNPJ, Razão Social, Nome Fantasia
+- Natureza Jurídica
+- Endereço completo
+- Telefone, Email
+- Situação cadastral
+- IE Ativa (número, UF, situação)
+
+**Aba "Histórico IEs":**
+- Todas as inscrições estaduais
+- Histórico completo por CNPJ
+
+## 🔐 Segurança
+
+- ✅ Não armazena senhas em texto plano
+- ✅ Cache local (não compartilhado)
+- ✅ Conexões HTTPS com a API
+- ✅ Validação de entrada de dados
+- ✅ Proteção XSRF habilitada
 
 ## 📝 Logs
 
-Os logs são salvos automaticamente em:
-- **Diretório**: `logs/`
-- **Formato**: `nfe_parser_YYYYMMDD.log`
-- **Rotação**: Automática quando atingir 10MB
-- **Backups**: Mantém 5 arquivos anteriores
+Todos os eventos são registrados em:
+- **Interface:** Expander "📋 Log de Atividades"
+- **Arquivo:** `log_cnpj.txt` (no diretório da aplicação)
 
-### Níveis de Log
+Tipos de log:
+- ℹ️ Informação
+- ✅ Sucesso
+- ❌ Erro
+- ⚠️ Aviso
 
-- **DEBUG**: Detalhes técnicos (apenas em arquivo)
-- **INFO**: Informações gerais (console e arquivo)
-- **WARNING**: Avisos (console e arquivo)
-- **ERROR**: Erros (console e arquivo)
-- **CRITICAL**: Erros críticos (console e arquivo)
+## 🆘 Suporte
 
-## 🔜 Próximas Funcionalidades
-
-1. ⏳ Sistema de mapeamento dinâmico de campos XML
-2. ⏳ GUI Desktop (tkinter)
-3. ⏳ GUI Web (Streamlit)
-4. ⏳ Exportação para múltiplos formatos (Excel, CSV, JSON)
-5. ⏳ Validação de schema XML
-6. ⏳ Testes unitários completos
-
-## 📚 Documentação Adicional
-
-- **[Análise Completa](analise_nfe_parser.md)**: Análise detalhada do código original
-- **[Plano de Melhorias](plano_melhorias_nfe_parser.md)**: Roadmap completo de melhorias
-
-## 🤝 Contribuindo
-
-Para adicionar novos campos ao parser:
-
-1. Edite `src/core/streaming_parser.py`
-2. Adicione o campo no método `_extract_item_data()` ou `_extract_header_data()`
-3. Use os métodos auxiliares: `find_element()`, `find_element_text()`, `_to_float()`
-4. Teste com `test_streaming_logger_simple.py`
+Para dúvidas ou problemas:
+1. Consulte a aba **"❓ Ajuda"** na aplicação
+2. Verifique os logs de atividades
+3. Revise esta documentação
+4. Entre em contato com o desenvolvedor
 
 ## 📄 Licença
 
-Este projeto é de código aberto e está disponível para uso livre.
-
-## 🐛 Reportar Problemas
-
-Para reportar bugs ou sugerir melhorias, verifique os logs em `logs/` e inclua:
-- Versão do Python
-- Sistema operacional
-- Arquivo de log relevante
-- Descrição do problema
-
-## 🎓 Suporte
-
-Para dúvidas sobre o uso:
-1. Consulte a documentação em `docs/`
-2. Execute os testes de exemplo
-3. Verifique os logs para mensagens de erro detalhadas
+Este projeto utiliza a API pública do CNPJ.WS (https://publica.cnpj.ws/)
 
 ---
 
-**Versão**: 2.0.0  
-**Última Atualização**: 2026-04-17  
-**Status**: ✅ Logging e Streaming implementados
+**Versão:** 3.0 (Streamlit)  
+**Última atualização:** 2026  
+**Desenvolvido com:** Python + Streamlit
