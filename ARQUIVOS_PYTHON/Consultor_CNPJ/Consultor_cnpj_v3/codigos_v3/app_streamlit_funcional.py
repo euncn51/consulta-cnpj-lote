@@ -24,7 +24,7 @@ from constants import LANG, API_CONFIG
 
 # Configuração da página
 st.set_page_config(
-    page_title="Consultor de CNPJ",
+    page_title="Pesquisa de Empresas",
     page_icon="🏢",
     layout="wide",
     initial_sidebar_state="expanded"
