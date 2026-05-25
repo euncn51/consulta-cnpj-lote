@@ -24,7 +24,7 @@ from constants import LANG, API_CONFIG
 
 # Configuração da página
 st.set_page_config(
-    page_title="Consultor de CNPJ",
+    page_title="Pesquisa de Empresas",
     page_icon="🏢",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -605,7 +605,7 @@ def main():
     init_session_state()
     
     # Título principal
-    st.markdown('<h1 class="main-header">🏢 Consultor de CNPJ</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header">🏢 Pesquisa de Empresa</h1>', unsafe_allow_html=True)
     
     # Sidebar com configurações
     sidebar_settings()
